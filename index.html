@@ -12,44 +12,45 @@
   </head>
   <body>
     <header class="site-header" aria-label="Primary">
-      <a class="brand" href="#top" aria-label="WildFin home">WildFin</a>
+      <a class="brand" href="#top">WildFin</a>
       <nav class="nav-links" aria-label="Page sections">
         <a href="#abstract">Abstract</a>
-        <a href="#dataset">Dataset</a>
-        <a href="#benchmark">Benchmark</a>
-        <a href="#citation">Citation</a>
+        <a href="#details">Details</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-media" aria-hidden="true">
-          <div class="fish fish-one"></div>
-          <div class="fish fish-two"></div>
-          <div class="fish fish-three"></div>
-          <div class="tracking-box box-one"></div>
-          <div class="tracking-box box-two"></div>
-          <div class="tracking-box box-three"></div>
-          <div class="seafloor"></div>
-        </div>
-        <div class="hero-content">
-          <p class="venue">ECCV Marine Vision Workshop 2026 &middot; Oral Presentation</p>
-          <h1>WildFin: An In-the-Wild Video Dataset for Fish Behavioral Recognition</h1>
-          <p class="subtitle">
-            A benchmark for recognizing fish behavior in complex underwater video, spanning stationary cameras
-            monitoring groups and diver-follow footage of individual subjects.
-          </p>
-          <div class="actions" aria-label="Project links">
-            <a class="button primary" href="#" aria-disabled="true">PDF coming soon</a>
-            <a class="button" href="#" aria-disabled="true">arXiv coming soon</a>
-            <a class="button" href="#dataset">Dataset</a>
-          </div>
+    <main id="top" class="paper-page">
+      <section class="paper-header" aria-labelledby="paper-title">
+        <p class="venue">ECCV Marine Vision Workshop 2026 &middot; Oral Presentation</p>
+        <h1 id="paper-title">WildFin: An In-the-Wild Video Dataset for Fish Behavioral Recognition</h1>
+
+        <p class="authors">
+          Abigail Grassick,
+          Jerome Tze-Hou Hsu,
+          Ethan Lin,
+          Ziang Liu,
+          Max Whitton,
+          Madelyn Hair,
+          Liam Gutierrez,
+          Haozheng Yu,
+          Kristin Branson,
+          Vivek Jayaraman,
+          Michael A. Gil,
+          Andrew M. Hein,
+          Jennifer J. Sun
+        </p>
+        <p class="affiliations">Cornell University</p>
+
+        <div class="paper-links" aria-label="Project links">
+          <a href="#" aria-disabled="true">Paper</a>
+          <a href="#" aria-disabled="true">arXiv</a>
+          <a href="#" aria-disabled="true">Code</a>
+          <a href="#" aria-disabled="true">Dataset</a>
         </div>
       </section>
 
-      <section class="section intro" id="abstract">
-        <p class="section-kicker">Overview</p>
-        <h2>A real-world benchmark for underwater behavioral analysis.</h2>
+      <section class="section abstract" id="abstract">
+        <h2>Abstract</h2>
         <p>
           Recent advances in field technology have led to a massive influx of in-the-wild video data for
           ecological science. The primary bottleneck in leveraging this data is the high cost of expert
@@ -59,115 +60,49 @@
         <p>
           WildFin characterizes these failures through a dataset collected and annotated by ecologists. It
           includes two critical deployment paradigms: stationary cameras monitoring groups of fish and dynamic
-          divers following individual subjects.
+          divers following individual subjects. The benchmark evaluates modern vision foundation models and
+          quantifies the remaining gap between current model capabilities and real-world underwater behavioral
+          analysis.
         </p>
       </section>
 
-      <section class="metrics" aria-label="Dataset statistics">
-        <div>
-          <span>1,350</span>
-          <p>hours of fieldwork</p>
-        </div>
-        <div>
-          <span>600</span>
-          <p>hours of expert annotation</p>
-        </div>
-        <div>
-          <span>9</span>
-          <p>hours of behavioral video</p>
-        </div>
-        <div>
-          <span>2M+</span>
-          <p>frame-by-frame labels</p>
-        </div>
+      <section class="section" id="details">
+        <h2>Dataset Details</h2>
+        <dl class="details-list">
+          <div>
+            <dt>Fieldwork</dt>
+            <dd>1,350 hours</dd>
+          </div>
+          <div>
+            <dt>Expert annotation</dt>
+            <dd>600 hours</dd>
+          </div>
+          <div>
+            <dt>Behavioral video</dt>
+            <dd>9 hours</dd>
+          </div>
+          <div>
+            <dt>Labels</dt>
+            <dd>2M+ frame-by-frame annotations</dd>
+          </div>
+          <div>
+            <dt>Video settings</dt>
+            <dd>Stationary group footage and diver-follow individual footage</dd>
+          </div>
+          <div>
+            <dt>Task</dt>
+            <dd>Fish behavioral recognition in complex underwater video</dd>
+          </div>
+        </dl>
       </section>
 
-      <section class="section tabs-section" id="dataset">
-        <div class="section-heading">
-          <p class="section-kicker">Resources</p>
-          <h2>Dataset and paper access.</h2>
-        </div>
-        <div class="tabs" data-tabs>
-          <div class="tab-list" role="tablist" aria-label="WildFin resources">
-            <button class="tab-button is-active" id="tab-dataset" type="button" role="tab" aria-selected="true" aria-controls="panel-dataset">
-              Dataset
-            </button>
-            <button class="tab-button" id="tab-paper" type="button" role="tab" aria-selected="false" aria-controls="panel-paper">
-              Paper
-            </button>
-            <button class="tab-button" id="tab-code" type="button" role="tab" aria-selected="false" aria-controls="panel-code">
-              Code
-            </button>
-          </div>
-
-          <div class="tab-panel is-active" id="panel-dataset" role="tabpanel" aria-labelledby="tab-dataset">
-            <h3>WildFin Dataset</h3>
-            <p>
-              WildFin contains curated in-the-wild video for fish behavior recognition, with frame-level
-              expert labels across stationary group footage and diver-follow individual footage.
-            </p>
-            <a class="resource-link" href="#" aria-disabled="true">Dataset coming soon</a>
-          </div>
-
-          <div class="tab-panel" id="panel-paper" role="tabpanel" aria-labelledby="tab-paper" hidden>
-            <h3>Paper</h3>
-            <p>
-              The manuscript and PDF will be linked here when public. The arXiv page is not live yet.
-            </p>
-            <a class="resource-link" href="#" aria-disabled="true">arXiv coming soon</a>
-          </div>
-
-          <div class="tab-panel" id="panel-code" role="tabpanel" aria-labelledby="tab-code" hidden>
-            <h3>Code</h3>
-            <p>
-              Benchmarking and evaluation code will be linked with the public release.
-            </p>
-            <a class="resource-link" href="#" aria-disabled="true">Code coming soon</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section split" id="benchmark">
-        <div>
-          <p class="section-kicker">Benchmark</p>
-          <h2>Stress-testing modern vision models in marine environments.</h2>
-        </div>
+      <section class="section">
+        <h2>Benchmark</h2>
         <p>
-          WildFin benchmarks modern vision foundation models and quantifies tradeoffs between static and
-          spatiotemporal architectures, revealing the gap that remains between current model capabilities
-          and real-world underwater behavioral analysis.
+          WildFin stress-tests static and spatiotemporal vision architectures in marine environments,
+          emphasizing real deployment conditions such as occlusion, changing visibility, camera motion, and
+          multi-animal scenes.
         </p>
-      </section>
-
-      <section class="section authors" aria-labelledby="authors-title">
-        <p class="section-kicker">Authors</p>
-        <h2 id="authors-title">Project team</h2>
-        <p>
-          <a href="https://openreview.net/profile?id=~Abigail_Grassick1">Abigail Grassick</a>,
-          <a href="https://openreview.net/profile?id=~Jerome_Tze-Hou_Hsu1">Jerome Tze-Hou Hsu</a>,
-          <a href="https://openreview.net/profile?id=~Ethan_Lin1">Ethan Lin</a>,
-          <a href="https://openreview.net/profile?id=~Ziang_Liu2">Ziang Liu</a>,
-          <a href="https://openreview.net/profile?id=~Max_Whitton1">Max Whitton</a>,
-          <a href="https://openreview.net/profile?id=~Madelyn_Hair1">Madelyn Hair</a>,
-          <a href="https://openreview.net/profile?id=~Liam_Gutierrez1">Liam Gutierrez</a>,
-          <a href="https://openreview.net/profile?id=~Haozheng_Yu1">Haozheng Yu</a>,
-          <a href="https://openreview.net/profile?id=~Kristin_Branson1">Kristin Branson</a>,
-          <a href="https://openreview.net/profile?id=~Vivek_Jayaraman1">Vivek Jayaraman</a>,
-          <a href="https://openreview.net/profile?id=~Michael_A._Gil1">Michael A. Gil</a>,
-          <a href="https://openreview.net/profile?id=~Andrew_M._Hein1">Andrew M. Hein</a>,
-          <a href="https://openreview.net/profile?id=~Jennifer_J._Sun1">Jennifer J. Sun</a>
-        </p>
-      </section>
-
-      <section class="section citation" id="citation">
-        <p class="section-kicker">Citation</p>
-        <h2>BibTeX</h2>
-        <pre><code>@inproceedings{grassick2026wildfin,
-  title = {WildFin: An In-the-Wild Video Dataset for Fish Behavioral Recognition},
-  author = {Grassick, Abigail and Hsu, Jerome Tze-Hou and Lin, Ethan and Liu, Ziang and Whitton, Max and Hair, Madelyn and Gutierrez, Liam and Yu, Haozheng and Branson, Kristin and Jayaraman, Vivek and Gil, Michael A. and Hein, Andrew M. and Sun, Jennifer J.},
-  booktitle = {ECCV Marine Vision Workshop},
-  year = {2026}
-}</code></pre>
       </section>
     </main>
 
