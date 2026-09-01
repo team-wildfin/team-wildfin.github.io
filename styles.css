@@ -259,16 +259,33 @@ dd {
 .colab-button {
   align-items: center;
   background: var(--panel);
-  border: 1px solid #b9c7d0;
+  border: 1px solid #b9cffb;
   border-radius: 6px;
-  color: #667987;
-  cursor: default;
+  box-shadow: 0 6px 18px rgba(24, 33, 47, 0.07);
+  color: var(--accent);
   display: inline-flex;
   font-size: 14px;
   font-weight: 800;
   gap: 8px;
   padding: 10px 15px;
   text-decoration: none;
+}
+
+.colab-button:hover {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+
+.colab-button[aria-disabled="true"] {
+  border-color: #b9c7d0;
+  box-shadow: none;
+  color: #667987;
+  cursor: default;
+}
+
+.colab-button[aria-disabled="true"]:hover {
+  background: var(--panel);
+  color: #667987;
 }
 
 .colab-button svg {
