@@ -213,6 +213,81 @@ dd {
   margin: 0;
 }
 
+.tutorial-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 8px;
+}
+
+.tutorial-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(24, 33, 47, 0.06);
+  padding: 26px;
+}
+
+.tutorial-card h3 {
+  color: #0f3765;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+
+.tutorial-card p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.tutorial-status {
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
+}
+
+.tutorial-status .status-dot {
+  background: var(--gold);
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+}
+
+.colab-button {
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid #b9c7d0;
+  border-radius: 6px;
+  color: #667987;
+  cursor: default;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 800;
+  gap: 8px;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.colab-button svg {
+  flex-shrink: 0;
+}
+
+.tutorial-note {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 650;
+  margin: 12px 0 0;
+}
+
+@media (max-width: 720px) {
+  .tutorial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .footer {
   border-top: 1px solid var(--line);
   color: var(--muted);
