@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="WildFin: An In-the-Wild Video Dataset for Fish Behavioral Recognition, accepted as an oral presentation at the ECCV Marine Vision workshop 2026."
+      content="WildFin: An In-the-Wild Dataset for Fish Behavioral Recognition, accepted as an oral presentation at the ECCV Marine Vision workshop 2026."
     >
-    <title>WildFin | Fish Behavioral Recognition Dataset</title>
+    <title>WildFin: An In-the-Wild Dataset for Fish Behavioral Recognition</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -15,62 +15,69 @@
       <a class="brand" href="#top">WildFin</a>
       <nav class="nav-links" aria-label="Page sections">
         <a href="#abstract">Abstract</a>
-        <a href="#details">Details</a>
+        <a href="#motivation">Motivation</a>
+        <a href="#details">Dataset</a>
+        <a href="#benchmark">Benchmark</a>
+        <a href="#citation">Citation</a>
         <a href="poster.html">Poster</a>
-        <a href="tutorials.html">Tutorials</a>
       </nav>
     </header>
 
-    <main id="top" class="paper-page">
+    <main id="top" class="paper-page home-page">
       <section class="paper-header" aria-labelledby="paper-title">
+        <video class="hero-video" autoplay muted loop playsinline poster="images/hero-underwater.jpg" aria-hidden="true">
+          <source src="videos/GX017050_hero_11s.mp4" type="video/mp4">
+        </video>
         <p class="venue">ECCV Marine Vision Workshop 2026 &middot; Oral Presentation</p>
-        <h1 id="paper-title">WildFin: An In-the-Wild Video Dataset for Fish Behavioral Recognition</h1>
+        <h1 id="paper-title">WildFin: An In-the-Wild Dataset for Fish Behavioral Recognition</h1>
 
         <p class="authors">
-          Abigail Grassick*,
-          Jerome Tze-Hou Hsu*,
-          Ethan Lin*,
-          Ziang Liu,
-          Max Whitton,
-          Madelyn Hair,
-          Liam Gutierrez,
-          Haozheng Yu,
-          Kristin Branson,
-          Vivek Jayaraman,
-          Michael A. Gil,
-          Andrew M. Hein,
-          Jennifer J. Sun
+          Abigail G. Grassick<sup>1,*</sup><a class="orcid-link" href="https://orcid.org/0009-0007-2484-0230" target="_blank" rel="noopener" aria-label="Abigail G. Grassick ORCID">iD</a>,
+          Jerome Tze-Hou Hsu<sup>1,*</sup><a class="orcid-link" href="https://orcid.org/0000-0003-1312-0186" target="_blank" rel="noopener" aria-label="Jerome Tze-Hou Hsu ORCID">iD</a>,
+          Ethan Lin<sup>1,*</sup><a class="orcid-link" href="https://orcid.org/0009-0007-6448-690X" target="_blank" rel="noopener" aria-label="Ethan Lin ORCID">iD</a>,
+          Ziang Liu<sup>1</sup><a class="orcid-link" href="https://orcid.org/0000-0001-6274-0459" target="_blank" rel="noopener" aria-label="Ziang Liu ORCID">iD</a>,
+          Max Whitton<sup>1</sup>,
+          Madelyn Hair<sup>2</sup><a class="orcid-link" href="https://orcid.org/0009-0009-8771-2871" target="_blank" rel="noopener" aria-label="Madelyn Hair ORCID">iD</a>,
+          Liam Gutierrez<sup>2</sup>,
+          Haozheng Yu<sup>1</sup><a class="orcid-link" href="https://orcid.org/0009-0007-6709-3191" target="_blank" rel="noopener" aria-label="Haozheng Yu ORCID">iD</a>,
+          Kristin Branson<sup>3</sup><a class="orcid-link" href="https://orcid.org/0000-0002-5567-2512" target="_blank" rel="noopener" aria-label="Kristin Branson ORCID">iD</a>,
+          Vivek Jayaraman<sup>3</sup><a class="orcid-link" href="https://orcid.org/0000-0003-3680-7378" target="_blank" rel="noopener" aria-label="Vivek Jayaraman ORCID">iD</a>,
+          Michael A. Gil<sup>2</sup><a class="orcid-link" href="https://orcid.org/0000-0002-0411-8378" target="_blank" rel="noopener" aria-label="Michael A. Gil ORCID">iD</a>,
+          Andrew M. Hein<sup>1</sup><a class="orcid-link" href="https://orcid.org/0000-0001-7217-6185" target="_blank" rel="noopener" aria-label="Andrew M. Hein ORCID">iD</a>,
+          Jennifer J. Sun<sup>1</sup><a class="orcid-link" href="https://orcid.org/0000-0002-0906-6589" target="_blank" rel="noopener" aria-label="Jennifer J. Sun ORCID">iD</a>
         </p>
-        <p class="affiliations"> 
-          Cornell University, 
-          University of Colorado Boulder,
-        Janelia HHMI </p>
-
-        <p class="co-first-authors">*Co-first authors</p>
+        <p class="affiliations">
+          <span><sup>1</sup> Cornell University</span>
+          <span><sup>2</sup> University of Colorado Boulder</span>
+          <span><sup>3</sup> HHMI Janelia Research Campus</span>
+        </p>
 
         <div class="paper-links" aria-label="Project links">
-          <a href="wildfin.pdf" target="_blank" rel="noopener">Paper</a>
-          <a href="https://arxiv.org/abs/2608.21281" target="_blank" rel="noopener">arXiv</a>
-          <a href="https://github.com/team-wildfin/wildfin-mini" aria-disabled="true">Code</a>
-          <a href="https://dataverse.harvard.edu/dataverse/wildfin/" target="_blank" rel="noopener">Dataset</a>
+          <a href="https://arxiv.org/abs/2608.21281" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 3.5h7l4 4V20.5H7zM14 3.5v4h4M10 12h5M10 15.5h5"/>
+            </svg>
+            arXiv
+          </a>
+          <a href="https://github.com/team-wildfin/wildfin-mini" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8.5 9 5.5 12l3 3M15.5 9l3 3-3 3M13.5 6.5l-3 11"/>
+            </svg>
+            Code
+          </a>
+          <a href="https://dataverse.harvard.edu/dataverse/wildfin/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <ellipse cx="12" cy="6" rx="7" ry="3"/>
+              <path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/>
+            </svg>
+            Dataset
+          </a>
         </div>
-      </section>
-
-      <section class="video-preview" aria-label="Dataset preview videos">
-        <div class="video-grid">
-          <div class="video-card">
-            <video autoplay muted loop playsinline aria-label="Stationary camera preview">
-              <source src="videos/GX017050_boxed_preview.mp4" type="video/mp4">
-            </video>
-            <p class="video-caption">CoralCam</p>
-          </div>
-          <div class="video-card">
-            <video autoplay muted loop playsinline aria-label="Diver-follow preview">
-              <source src="videos/fishfollow_for_pres.mp4" type="video/mp4">
-            </video>
-            <p class="video-caption">FishFollow</p>
-          </div>
-        </div>
+        <a class="scroll-cue" href="#abstract" aria-label="Scroll to abstract">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m6 9 6 6 6-6"/>
+          </svg>
+        </a>
       </section>
 
       <section class="section abstract" id="abstract">
@@ -79,54 +86,321 @@
           Recent advances in field technology have led to a massive influx of in-the-wild video data for
           ecological science. The primary bottleneck in leveraging this data is the high cost of expert
           annotation. While computer vision offers a potential solution, current models frequently fail when
-          deployed in complex marine environments.
+          deployed in complex marine environments. To characterize these failures, we introduce <b>WildFin</b>, a
+          novel benchmark for fish behavior recognition collected and annotated by ecologists. <b>WildFin</b> spans
+          two critical real-world paradigms: stationary cameras monitoring groups of fish and dynamic divers
+          following individual subjects. The dataset represents a massive curation effort, involving 1,350
+          hours of fieldwork and 600 hours of expert annotation to produce 9 hours of behavioral data with over
+          2 million frame-by-frame labels. We benchmark modern vision foundation models and quantify tradeoffs
+          between static and spatiotemporal architectures, revealing the substantial gap that remains between
+          current model capabilities and the demands of real-world underwater behavioral analysis.
         </p>
-        <p>
-          WildFin characterizes these failures through a dataset collected and annotated by ecologists. It
-          includes two critical deployment paradigms: stationary cameras monitoring groups of fish and dynamic
-          divers following individual subjects. The benchmark evaluates modern vision foundation models and
-          quantifies the remaining gap between current model capabilities and real-world underwater behavioral
-          analysis.
-        </p>
+      </section>
+
+      <section class="section" id="motivation">
+        <h2>Motivation</h2>
+        <div class="motivation-card">
+          <figure class="motivation-figure">
+            <a href="images/motivation.png" target="_blank" rel="noopener" aria-label="Open the WildFin motivation figure at full size">
+              <img src="images/motivation.png" alt="Marine ecology pipeline from raw footage through manual annotation or computer-vision behavior classification to a behavior distribution" loading="lazy">
+            </a>
+          </figure>
+          <div class="motivation-copy">
+            <p>
+              Many in-situ or &ldquo;in the wild&rdquo; marine ecology pipelines require the annotation of fish
+              behavior from raw video. Historically, domain experts spend many hours manually annotating this
+              behavior data (including in our work), and thus it is extremely expensive to gather enough data to
+              generate any downstream ecological insights.
+            </p>
+            <p>
+              With recent advances in computer vision, the automation of labeling ecological behavior data is
+              becoming increasingly possible. WildFin is a new benchmark to evaluate the performance of computer
+              vision models on fish behavior classification tasks in real-world ecological data --- the
+              data that ecologists actually use for science.
+            </p>
+            <p>
+              In addition to benchmarking vision model capabilities, we are excited to see how WildFin can bridge the gap between computer vision research and the practical challenges of ecological applications.
+            </p>
+
+          </div>
+        </div>
       </section>
 
       <section class="section" id="details">
         <h2>Dataset Details</h2>
-        <dl class="details-list">
-          <div>
-            <dt>Fieldwork</dt>
-            <dd>1,350 hours</dd>
-          </div>
-          <div>
-            <dt>Expert annotation</dt>
-            <dd>600 hours</dd>
-          </div>
-          <div>
-            <dt>Behavioral video</dt>
-            <dd>9 hours</dd>
-          </div>
-          <div>
-            <dt>Labels</dt>
-            <dd>2M+ frame-by-frame annotations</dd>
-          </div>
-          <div>
-            <dt>Video settings</dt>
-            <dd>Stationary group footage and diver-follow individual footage</dd>
-          </div>
-          <div>
-            <dt>Task</dt>
-            <dd>Fish behavioral recognition in complex underwater video</dd>
-          </div>
-        </dl>
+        <p class="dataset-intro">
+          WildFin is composed of two datasets, <strong>CoralCam</strong> and <strong>FishFollow</strong>, that
+          benchmark fish behavior recognition across two different real-world data-collection paradigms. We
+          provide short Colab notebooks showing how to load and work with each dataset
+          (<a href="https://colab.research.google.com/drive/1f4TOLeHGgOxMOJ51b9m297P-oZMnO5W8?usp=sharing" target="_blank" rel="noopener">CoralCam</a> /
+          <a href="https://colab.research.google.com/drive/1Xn7ipTdhH1UZVVQhnNiaG2Fh3Rn14mFa?usp=sharing" target="_blank" rel="noopener">FishFollow</a>).
+          We recommend using our codebase <a href="https://github.com/team-wildfin/wildfin-mini" target="_blank" rel="noopener">VisionBench</a>
+          when training models on the dataset. It is a modular and scalable PyTorch framework for video
+          classification tasks and handles many of the challenges of working with large amounts of video data.
+        </p>
+        <div class="dataset-panels">
+          <article class="dataset-panel">
+            <p class="dataset-kicker">Stationary · Multi-agent</p>
+            <div class="dataset-panel-heading">
+              <h3>CoralCam</h3>
+              <a class="colab-button panel-colab-button" href="https://colab.research.google.com/drive/1f4TOLeHGgOxMOJ51b9m297P-oZMnO5W8?usp=sharing" target="_blank" rel="noopener">
+                <svg width="20" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4.5 16.5a5.5 5.5 0 1 1 6.62-8.62l1.76 1.76A5.5 5.5 0 1 1 19.5 16.5H4.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                </svg>
+                Open in Colab
+              </a>
+            </div>
+            <video class="dataset-video" autoplay muted loop playsinline preload="metadata" aria-label="CoralCam stationary-camera example">
+              <source src="videos/GX017050_boxed_preview.mp4" type="video/mp4">
+            </video>
+            <p class="dataset-summary">
+              Fixed cameras observe schools of brown chromis across 12 wild reef sites in Curaçao, capturing
+              dense social behavior amid occlusion, small fish, and complex coral backgrounds.
+            </p>
+
+            <dl class="subset-stats">
+              <div>
+                <dt>Footage</dt>
+                <dd>1.2 hours · 258,998 frames</dd>
+              </div>
+              <div>
+                <dt>Capture</dt>
+                <dd>12 sites · 1080p at 60 fps</dd>
+              </div>
+              <div>
+                <dt>Behavior labels</dt>
+                <dd>213 verified tracks · 3 behaviors</dd>
+              </div>
+              <div>
+                <dt>Detection labels</dt>
+                <dd>21,116 boxes · 3 species</dd>
+              </div>
+              <div>
+                <dt>Quality control</dt>
+                <dd>Inter-annotator F1 0.74</dd>
+              </div>
+            </dl>
+            <h4>CoralCam Ethogram</h4>
+            <figure class="taxonomy-figure taxonomy-figure--coralcam">
+              <a href="images/coralcam_ethogram.png" target="_blank" rel="noopener" aria-label="Open the CoralCam ethogram at full size">
+                <img src="images/coralcam_ethogram.png" alt="CoralCam ethogram showing bites and aggression behaviors with their frame frequencies" loading="lazy">
+              </a>
+              <figcaption>
+                CoralCam behavior ethogram. Bars show the percentage of annotated frames assigned to each
+                behavior; labels may overlap under frame-level multi-label annotation. Select to enlarge.
+              </figcaption>
+            </figure>
+            <h4>CoralCam Detection Species Distribution</h4>
+            <figure class="distribution-figure">
+              <a href="images/coralcam_species_distribution.svg" target="_blank" rel="noopener" aria-label="Open the overall CoralCam species distribution at full size">
+                <img src="images/coralcam_species_distribution.svg" alt="Stacked bar showing the overall species distribution across all CoralCam detection boxes" loading="lazy">
+              </a>
+              <figcaption>
+                Overall species composition across 22,811 CoralCam detection boxes: 3,263 bi-color damselfish,
+                2,627 bluehead wrasse, and 16,921 brown chromis boxes. Select to enlarge.
+              </figcaption>
+            </figure>
+
+            <div class="dataset-construction">
+              <h4>How it was constructed</h4>
+              <p>
+                Expert bounding boxes trained a YOLOv8 detector (AP@0.5 74.5), detections were linked with
+                BoTSort, and ecologists then verified selected tracks and labeled behavior frame by frame. Mouth
+                visibility identified frames where behavior could not be judged reliably.
+              </p>
+            </div>
+
+            <p class="dataset-task">
+              <strong>Benchmark task</strong>
+              Classify behavior on tracked individuals in crowded, stationary reef scenes.
+            </p>
+          </article>
+
+          <article class="dataset-panel">
+            <p class="dataset-kicker">Mobile · Focal-follow</p>
+            <div class="dataset-panel-heading">
+              <h3>FishFollow</h3>
+              <a class="colab-button panel-colab-button" href="https://colab.research.google.com/drive/1Xn7ipTdhH1UZVVQhnNiaG2Fh3Rn14mFa?usp=sharing" target="_blank" rel="noopener">
+                <svg width="20" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4.5 16.5a5.5 5.5 0 1 1 6.62-8.62l1.76 1.76A5.5 5.5 0 1 1 19.5 16.5H4.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                </svg>
+                Open in Colab
+              </a>
+            </div>
+            <video class="dataset-video" autoplay muted loop playsinline preload="metadata" aria-label="FishFollow focal-follow example">
+              <source src="videos/fishfollow_for_pres.mp4" type="video/mp4">
+            </video>
+            <p class="dataset-summary">
+              Divers follow individual parrotfish and surgeonfish through wild reefs in Curaçao, preserving the
+              camera motion and viewpoint shifts of real behavioral field observations.
+            </p>
+
+            <dl class="subset-stats">
+              <div>
+                <dt>Footage</dt>
+                <dd>8 hours · 1,799,894 frames</dd>
+              </div>
+              <div>
+                <dt>Capture</dt>
+                <dd>81 videos · 4K at 60 fps</dd>
+              </div>
+              <div>
+                <dt>Behavior labels</dt>
+                <dd>20 behaviors · frame-level</dd>
+              </div>
+              <div>
+                <dt>Quality control</dt>
+                <dd>35% independently double-annotated</dd>
+              </div>
+            </dl>
+            <h4>FishFollow Ethogram</h4>
+            <figure class="taxonomy-figure taxonomy-figure--fishfollow">
+              <a href="images/fishfollow_ethogram.png" target="_blank" rel="noopener" aria-label="Open the FishFollow ethogram at full size">
+                <img src="images/fishfollow_ethogram.png" alt="FishFollow ethogram showing habitat, movement, social interaction, visibility, and bites with their frame frequencies" loading="lazy">
+              </a>
+              <figcaption>
+                FishFollow behavior ethogram. Categories organize habitat, movement, social interaction,
+                visibility, and feeding labels; bars show their frequency across annotated frames. Select to
+                enlarge.
+              </figcaption>
+            </figure>
+
+            <div class="dataset-construction">
+              <h4>How it was constructed</h4>
+              <p>
+                Because each recording follows one focal fish, trained annotators labeled behavior directly on
+                every frame without an upstream tracking stage. Agreement reached F1 0.78 at 0.25 seconds and
+                F1 0.93 at 0.5 seconds.
+              </p>
+            </div>
+
+            <p class="dataset-task">
+              <strong>Benchmark task</strong>
+              Classify behavior through continuous camera motion, habitat transitions, and scale changes.
+            </p>
+          </article>
+        </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="benchmark">
         <h2>Benchmark</h2>
-        <p>
-          WildFin stress-tests static and spatiotemporal vision architectures in marine environments,
-          emphasizing real deployment conditions such as occlusion, changing visibility, camera motion, and
-          multi-animal scenes.
+        <p class="benchmark-lede">
+          Modern vision foundation models learn reusable representations from large-scale image and video data,
+          making them promising for ecological tasks where expert labels are scarce and expensive. We use
+          WildFin to test whether these general features transfer to real-world fish behavior recognition and
+          when explicit temporal modeling is necessary.
         </p>
+
+        <div class="benchmark-overview">
+          <article class="benchmark-card">
+            <h3>What We Evaluate</h3>
+            <p>
+              We compare image backbones (DINOv3 and ResNet50) with video backbones (VideoMAE and V-JEPA 2).
+              Image models process individual frames, while video models process 16-frame clips to capture
+              motion and interaction cues.
+            </p>
+          </article>
+          <article class="benchmark-card">
+            <h3>Adaptation Protocol</h3>
+            <p>
+              Pre-trained backbones remain frozen while lightweight mean- or cross-attention-pooling and
+              two-layer classification heads are trained. Performance is measured with macro F1, precision, and
+              recall using a ±7-frame tolerance for uncertain behavior boundaries.
+            </p>
+          </article>
+        </div>
+
+        <figure class="benchmark-figure">
+          <a href="images/benchmark_figure.png" target="_blank" rel="noopener" aria-label="Open the WildFin benchmarking pipeline figure at full size">
+            <img src="images/benchmark_figure.png" alt="WildFin benchmarking pipeline comparing frozen image and video foundation models with a trainable classification head" loading="lazy">
+          </a>
+          <figcaption>
+            Our benchmarking pipeline for WildFin. We evaluate frozen image and video foundation models with
+            different classification head tuning on the behavior classification task.
+          </figcaption>
+        </figure>
+
+        <h3 class="benchmark-subheading">Main Results</h3>
+        <div class="benchmark-results-grid">
+          <article class="benchmark-card benchmark-result-card">
+            <p class="benchmark-card-kicker">CoralCam</p>
+            <h4>Temporal cues unlock dynamic behaviors</h4>
+            <figure class="benchmark-result-figure">
+              <a href="images/coralcam_results.png" target="_blank" rel="noopener" aria-label="Open the CoralCam benchmark results at full size">
+                <img src="images/coralcam_results.png" alt="CoralCam macro-F1 results comparing image and video backbones across overall, aggression, and biting behavior categories" loading="lazy">
+              </a>
+              <figcaption>Macro-F1 by backbone and behavior category · Select to enlarge</figcaption>
+            </figure>
+            <p>
+              VideoMAE-L achieves the strongest overall macro F1 (0.450). Image models remain competitive for
+              visually defined biting behavior, but nearly fail on aggression, where VideoMAE-L reaches 0.332.
+              This gap shows that interaction-driven behaviors require temporal context.
+            </p>
+          </article>
+          <article class="benchmark-card benchmark-result-card">
+            <p class="benchmark-card-kicker">FishFollow</p>
+            <h4>Appearance helps, but rare behaviors remain difficult</h4>
+            <figure class="benchmark-result-figure">
+              <a href="images/fishfollow_results.png" target="_blank" rel="noopener" aria-label="Open the FishFollow benchmark results at full size">
+                <img src="images/fishfollow_results.png" alt="FishFollow macro-F1 results comparing image and video backbones across habitat, movement, bites, social, and visibility categories" loading="lazy">
+              </a>
+              <figcaption>Macro-F1 by backbone and behavior category · Select to enlarge</figcaption>
+            </figure>
+            <p>
+              Video models lead overall and on movement, while DINOv3-L performs best on habitat labels that
+              rely heavily on static appearance. Across architectures, performance remains low for long-tailed
+              bite and social-interaction classes.
+            </p>
+          </article>
+        </div>
+
+        <h3 class="benchmark-subheading">Other Takeaways</h3>
+        <div class="benchmark-takeaways">
+          <article class="benchmark-card">
+            <h4>Class imbalance matters</h4>
+            <p>
+              Naive random sampling produces near-zero performance on rare behaviors. Balanced sampling is
+              essential, while focal loss generally trades modest precision for improved recall.
+            </p>
+          </article>
+          <article class="benchmark-card">
+            <h4>Pooling is model-dependent</h4>
+            <p>
+              Cross-attention pooling improves most backbones by emphasizing informative tokens, but mean
+              pooling works substantially better for V-JEPA 2's distributed representations.
+            </p>
+          </article>
+          <article class="benchmark-card">
+            <h4>Full fine-tuning can overfit</h4>
+            <p>
+              A fully tuned ResNet50 is competitive on the smaller CoralCam task, but its advantage disappears
+              on FishFollow, where robust frozen DINOv3 features transfer better.
+            </p>
+          </article>
+        </div>
+        <p class="benchmark-note">Comprehensive results and full ablation tables are provided in the paper and appendix.</p>
+      </section>
+
+      <section class="section" id="citation">
+        <h5>If you find WildFin useful, please consider citing our paper:</h5>
+
+        <div class="citation-card">
+          <button class="copy-citation-button" type="button" data-copy-citation aria-label="Copy BibTeX" title="Copy BibTeX">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="8" y="8" width="11" height="11" rx="2"/>
+              <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/>
+            </svg>
+          </button>
+          <pre><code id="bibtex-citation">@misc{grassick2026wildfininthewilddatasetfish,
+  title         = {WildFin: An In-the-Wild Dataset for Fish Behavioral Recognition},
+  author        = {Abigail G. Grassick and Jerome Tze-Hou Hsu and Ethan Lin and Ziang Liu and Max Whitton and Madelyn Hair and Liam Gutierrez and Haozheng Yu and Kristin Branson and Vivek Jayaraman and Michael A. Gil and Andrew M. Hein and Jennifer J. Sun},
+  year          = {2026},
+  eprint        = {2608.21281},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2608.21281}
+}</code></pre>
+        </div>
       </section>
     </main>
 
